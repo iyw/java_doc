@@ -1,8 +1,8 @@
-#fastDFS搭建图片服务器(完整流程)
+# fastDFS搭建图片服务器(完整流程)
 
-##安装fastdfs
+## 安装fastdfs
 
-####1) 先安装依赖
+#### 1) 先安装依赖
 安装依赖 yum install libenvent
 
 安装基础库 
