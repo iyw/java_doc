@@ -3,7 +3,7 @@
 ## 安装fastdfs
 
 #### 1) 先安装依赖
-安装依赖 yum install libenvent
+安装依赖 yum install libevent
 
 安装基础库 
 ```
