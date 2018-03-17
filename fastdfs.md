@@ -87,7 +87,7 @@ tracker_query_storage_store_list_without_group:
      ~/build/fastdfs packet_write_wait: Connection to 118.190.19.45 port 22: Broken pipe
 ```
 
-##二、安装fastdfs-nginx-module
+## 二、安装fastdfs-nginx-module
 
 ```
  git clone https://github.com/happyfish100/fastdfs-nginx-module.git /usr/local/fastdfs-nginx-module
@@ -102,14 +102,14 @@ tracker_query_storage_store_list_without_group:
  url_have_group_name = true
 
 
- 下载nginx 并安装 
+下载nginx 并安装 
 
  ./configure  --prefix=/usr/local/nginx --with-http_gzip_static_module --http-client-body-temp-path=/var/temp/nginx/client --http-proxy-temp-path=/var/temp/nginx/proxy --http-fastcgi-temp-path=/var/temp/nginx/fastcgi --http-uwsgi-temp-path=/var/temp/nginx/uwsgi --http-scgi-temp-path=/var/temp/nginx/scgi --add-module=/usr/local/fastdfs-nginx-module/src/
  make && make install 
 
 ```
 
-添加nginx配置
+#### 添加nginx配置
 
 ```
 server {
