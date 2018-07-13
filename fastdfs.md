@@ -6,7 +6,7 @@
 安装依赖 yum install libevent
 
 安装基础库 
-```
+```sh
 git clone https://github.com/happyfish100/libfastcommon.git
 cd libfastcommon
 ./make.sh
@@ -14,7 +14,7 @@ cd libfastcommon
 ```
 
 #### 2) 下载fastdfs
-```
+```sh
 git clone https://github.com/happyfish100/fastdfs.git 
 cd fastdfs
 
@@ -24,7 +24,7 @@ cd fastdfs
 
 安装成功后 将conf下的文件copy 到/etc/fdfs
 
-```
+```sh
     conf/
     ├── anti-steal.jpg
     ├── client.conf
@@ -36,7 +36,7 @@ cd fastdfs
 ```
 
 #### 3)配置
-```
+```sh
 修改tracker.conf
 base_path=/home/fastDFS (目录可以自行定义)
 
@@ -49,7 +49,7 @@ tracker_server=118.190.19.45:22122
 
 ### 4)启动
 
-```
+```sh
 启动tracker
 sudo /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf start
 
@@ -59,7 +59,7 @@ sudo /usr/bin/fdfs_trackerd /etc/fdfs/tracker.conf start
 
 ### 5)测试
 
-```
+```sh
 /usr/bin/fdfs_test /etc/fdfs/client.conf  upload /www/test/image/suo/shasha.jpeg 
 
 提示如下说明安装成功
@@ -89,7 +89,7 @@ tracker_query_storage_store_list_without_group:
 
 ## 二、安装fastdfs-nginx-module
 
-```
+```sh
  git clone https://github.com/happyfish100/fastdfs-nginx-module.git /usr/local/fastdfs-nginx-module
 
  并将src下的 mod_FastDFS.conf 拷贝至/etc/fdfs下
@@ -111,7 +111,7 @@ tracker_query_storage_store_list_without_group:
 
 #### 添加nginx配置
 
-```
+```sh
 server {
     listen 8080; 
     server_name www.httpds.com;
