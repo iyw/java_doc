@@ -24,13 +24,13 @@ hub.c.163.com/library/tomcat   latest              72d2be374029        13 months
 ```
 
 #### docker容器常用命令
-后台启动: docker run -d hub.c.163.com/library/tomcat 
+* 后台启动: docker run -d hub.c.163.com/library/tomcat 
 说明 -d: 后台运行
-进入:docker exec –it [container] /bin/bash
-停止:docker stop [container]
-删除:docker rm [container]
-保存:docker commit [container id] [image:version]
-挂载映射端口:docker run -d  -p 9999:8080 hub.c.163.com/library/tomcat 
+* 进入:docker exec –it [container] /bin/bash
+* 停止:docker stop [container]
+* 删除:docker rm [container]
+* 保存:docker commit [container id] [image:version]
+* 挂载映射端口:docker run -d  -p 9999:8080 hub.c.163.com/library/tomcat 
 -p 将本地端口9999 映射到容器8080端口
 
 #### 小试牛刀(使用docker容器运行java-web应用、此处以dubbo管理后台为例、也可以用其它任何的web应用)
@@ -44,9 +44,9 @@ MAINTAINER tanyawen
 COPY ./dubbo.war /usr/local/tomcat/webapps
 ```
 命令说明:
-FROM: 依赖的容器 同一dockerfile可以多次使用此命令
-MAINTAINER: 所属人
-COPY:将本地的war包 copy到容器中的某个目录 
+* FROM: 依赖的容器 同一dockerfile可以多次使用此命令
+* MAINTAINER: 所属人
+* COPY:将本地的war包 copy到容器中的某个目录 
 
 详细命令参考文档:https://www.jianshu.com/p/cad3ec6e91cb
 
