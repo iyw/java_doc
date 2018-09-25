@@ -68,7 +68,7 @@ yum install docker-ce-18.03.1.ce-1.el7.centos
 ```
 最新版本
 ```vim
-yum install docker-ce1
+yum install docker-ce
 
 ```
 由于repo中默认只开启stable仓库，故这里安装的是最新稳定版18.03
@@ -76,10 +76,10 @@ yum install docker-ce1
 ##### 6.启动docker
 
 启动命令
-systemctl start docker1
+systemctl start docker
 
 查看版本
-docker -version1
+docker -version
 
 
 
@@ -87,7 +87,7 @@ docker -version1
 
 查看docker已经安装版本
 
-yum list installed | grep docker1
+yum list installed | grep docker
 
 卸载
 ```vim
@@ -112,10 +112,10 @@ yum list installed | grep docker1
 vi /etc/profile
 在文件末尾添加（如果默认端口2375修改成了9000）
 
-export DOCKER_HOST=tcp://0.0.0.0:23751
+export DOCKER_HOST=tcp://0.0.0.0:2375
 让配置生效：
 
-source /etc/profile1
+source /etc/profile
 ```
 
 
